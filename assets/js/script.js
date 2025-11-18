@@ -31,5 +31,7 @@ INPUT_TEXT.addEventListener("keypress", function(event) {
 function newLi(){
     let NouvelleTache = document.createElement("li");
     NouvelleTache.id = "idTache";
-    NouvelleTache.innerText = INPUT_TEXT.innerText
+    NouvelleTache.innerText = INPUT_TEXT.value
+    document.getElementById("liste-taches").appendChild(NouvelleTache);
+    INPUT_TEXT.value = "";
 }
