@@ -29,9 +29,9 @@ INPUT_TEXT.addEventListener("keypress", function(event) {
 // ====================================================
 
 function newLi(){
-    let NouvelleTache = document.createElement("li");
-    NouvelleTache.id = "idTache";
+    let NouvelleTache = document.createElement("newli");
+    NouvelleTache.classList.add("tache")
     NouvelleTache.innerText = INPUT_TEXT.value
-    document.getElementById("liste-taches").appendChild(NouvelleTache);
+    document.getElementsByClassName("liste liste-afaire").appendChild(NouvelleTache);
     INPUT_TEXT.value = "";
 }
